@@ -37,6 +37,10 @@ Unix like OS already comes with make preinstalled so no worries.
 It's a a bit long process but in short you need to install Docker from https://hub.docker.com/editions/community/docker-ce-desktop-windows/ and it also need specefic version of Windows and WSL2, so check online for for further help.
 
 ## 3. Running Web Application
+After Cloning it, download all depencies once
+```sh
+go mod download
+```
 Run the command and make sure to set config.yaml file for configuration
 ```sh 
 make run
