@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "97821378-8029-48ba-a359-efb4105414ec",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Rajiv\",\r\n    \"password\":\"1231\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				},
+				"description": "It take the username and password as json in RAW format in body"
+			},
+			"response": []
+		},
+		{
+			"name": "Regiter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8080/user/register?username=rajiv&password=1231&marks=1,2,3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "rajiv"
+						},
+						{
+							"key": "password",
+							"value": "1231"
+						},
+						{
+							"key": "marks",
+							"value": "1,2,3"
+						}
+					]
+				},
+				"description": "This is not the appropriate way for sending confidential data, it's just to show the How can we handle the qurey params"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

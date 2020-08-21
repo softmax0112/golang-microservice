@@ -6,7 +6,3 @@ import "database/sql"
 type DBConfig struct {
 	DB *sql.DB
 }
-
-// func (d UserConfig) CreateUser(username string, password string) error {
-
-// }
