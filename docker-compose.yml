@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web: 
+    build: .
+    image: WebApp:1.0
+    ports:
+      - "8080:8080"
+  db: 
+    image: mysql
+    ports:
+      - '3306'
+    volumes:
+      - ./mysqldata:/var/lib/mysql:rw,delegated
+    environment:
+      MYSQL_ROOT_PASSWORD: "pwd" 

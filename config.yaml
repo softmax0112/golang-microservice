@@ -1,0 +1,7 @@
+APPLICATION_PORT: "8080"
+DB_TYPE: "mysql"
+DB_USERNAME: "rajiv"
+DB_PASSWORD: "pwd"
+DB_NAME: "test"
+DB_HOST: "172.17.0.3"
+DB_PORT: 3306
