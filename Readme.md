@@ -56,7 +56,7 @@ Create a DB with any name and make sure to give the set DB_NAME in Config file a
 3. password VARCHAR (20)
 4. marks VARCHAR (20) NULL(by Defualt)
 
-## 4. Running the Web Application in DOCKER
+## 5. Running the Web Application in DOCKER
 1. Buiding the image
 Syntax :- docker build -t <tag name> <directory of Dockerfile>
 Example :- 
@@ -100,7 +100,7 @@ docker inspect <name of container>
 -d  for running conatainer in detach mode
 --rm for removing the conatiner after stopping it
 
-## 5. Running MySQL in Another Container
+## 6. Running MySQL in Another Container
 1. Pull the MySQL image from docker hub
 ```sh
 docker pull mysql/mysql-server:latest
@@ -123,7 +123,7 @@ Example :-
 ```sh
 docker run --rm -p 3306:3306 -d -e MYSQL_ROOT_PASSWORD=pwd --volumes-from mysqldata --name=mysqldb mysql/mysql-server:latest     
 ```
-## 6. Getting inside the running the Container
+## 7. Getting inside the running the Container
 1. A database could have been created when running the WebApllication but  here will create by another way.
 Syntax :-
 ```sh 
